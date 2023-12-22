@@ -1,0 +1,22 @@
+\documentclass[headinclude, footinclude]{scrbook}
+\input{config}
+
+\begin{document}
+    \input{FrontBack/Frontespizio}
+    \input{FrontBack/Titleback}
+    
+    \frontmatter
+    \include{FrontBack/Quote}
+    \include{FrontBack/Abstract}
+    \tableofcontents
+    
+    \mainmatter
+    \include{Chapters/Chapter1/Index}
+    \include{Chapters/Chapter2/Index}
+    \appendix
+    \include{Chapters/AppendixA/Index}
+    
+    \backmatter
+    \include{FrontBack/Conclusions}
+    \include{FrontBack/Bibliography}
+\end{document}
