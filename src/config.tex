@@ -4,8 +4,9 @@
 \PassOptionsToPackage{T1}{fontenc}
 \usepackage{fontenc}
 
-\PassOptionsToPackage{backend=biber, style=alphabetic}{biblatex} % You can change the bibliography style here.
-\usepackage{biblatex}
+\usepackage{float}
+\PassOptionsToPackage{backend=biber}{biblatex} % You can change the bibliography style here.
+\usepackage[style=ieee]{biblatex}
 \addbibresource{Bibliography.bib}
 
 \usepackage{graphicx} 
@@ -17,6 +18,11 @@
 
 \usepackage{minted} % If you don't need to write any code, just remove this line.
 
+\usepackage{balance}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+
+\SetTracking{encoding={*}, shape=sc}{40}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
 \theoremstyle{definition}
